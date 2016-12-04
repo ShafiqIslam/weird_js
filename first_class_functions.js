@@ -27,7 +27,7 @@ function statement() {
 	console.log('This function is just a statement.');
 }
 
-// expression(); wont't work.
+// expression(); wont't work, bcz hoisting only created the variable.
 var expression = function() {
 	console.log('This function is an expression.');
 }
