@@ -18,8 +18,8 @@ callback(function() {
 
 
 /*
- * Expression: is a unit of a code that results in a value.
- * Statement: is a unit of a code that just do something.
+ * Expression: is a unit of a code that results in a value. ex: a = 3;
+ * Statement: is a unit of a code that just do something. ex: if() {}
  */
 console.log("\n");
 statement();
@@ -32,6 +32,15 @@ var expression = function() {
 	console.log('This function is an expression.');
 }
 expression();
+
+var x = function() {
+	return 'This is returned from an IIFE: Immediately Invoked Function Expression.';
+}();
+console.log(x);
+
+(function() {
+	console.log("Anonymous IIFE! If not wrapped with parenthesis, it will cause syntax error.");
+})();
 
 
 /*
